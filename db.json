@@ -1,0 +1,36 @@
+{
+  "details": [
+    {
+      "id": 2,
+      "name": "Varsha",
+      "empno": 19320,
+      "mobile": 8639094733,
+      "address": "Hyderabad",
+      "pincode": 500059
+    },
+    {
+      "id": 3,
+      "name": "suraj",
+      "empno": 19318,
+      "mobile": 8790519812,
+      "address": "Adilabad",
+      "pincode": 504346
+    },
+    {
+      "id": 4,
+      "name": "Anju",
+      "empno": 19486,
+      "mobile": 7000989694,
+      "address": "Hyderabad",
+      "pincode": 500059
+    },
+    {
+      "id": 5,
+      "name": "Nikitha",
+      "empno": 19487,
+      "mobile": 8121881265,
+      "address": "Hyderabad",
+      "pincode": 500059
+    }
+  ]
+}

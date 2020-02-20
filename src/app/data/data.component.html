@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <table class="table table-bordered">
+                <tr>
+                    <th>Checkbox</th>
+                    <th>Name</th>
+                    <th>EmpId</th>
+                    <th>Mobile</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Action</th>
+                </tr>
+                <!-- <tr *ngFor="let data of Details " >
+                    <td><input type="checkbox" [(ngModel)]="data.hide" checked="!data.hide" (click)="changed(data)"></td>
+                    <td>{{data.name}}</td>
+                    <td>{{data.empno}}</td>
+                    <td>{{data.mobile}}</td>
+                    <td>{{data.address}}</td>
+                    <td>{{data.pincode}}</td>   
+                    <td><button class="btn btn-danger" (click)="delete(data)"  [disabled]="data.hide" >Delete</button></td>
+                </tr> -->
+                <tr *ngFor="let data of Details ">
+                    <td><input type="checkbox" [(ngModel)]="data.hide" (change)="selectId($event.target.checked, data)"
+                            [checked]="check(data)"></td>
+                    <td>{{data.name}}</td>
+                    <td>{{data.empno}}</td>
+                    <td>{{data.mobile}}</td>
+                    <td>{{data.address}}</td>
+                    <td>{{data.pincode}}</td>
+                    <td><button class="btn btn-danger" (click)="delete(data)" [disabled]="data.hide">Delete</button>
+                    </td>
+                </tr>
+
+            </table>
+            <button class="btn btn-danger"  [disabled]="hide_button" (click)="deleteAll()">Delete All</button>
+        </div>
+    </div>
+</div>
